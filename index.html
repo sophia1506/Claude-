@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mondzeit</title>
+  <meta name="description" content="Persönlicher Periodentracker – privat, offline, nur auf deinem Gerät.">
+  <meta name="theme-color" content="#fbf3ee">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <!-- Keine externen Verbindungen: alles kommt von hier -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/icon-192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Mondzeit">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <main id="main" class="app">
+    <section id="view-home" class="view" aria-label="Heute"></section>
+    <section id="view-calendar" class="view" aria-label="Kalender" hidden></section>
+    <section id="view-stats" class="view" aria-label="Statistik" hidden></section>
+    <section id="view-settings" class="view" aria-label="Einstellungen" hidden></section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Hauptnavigation">
+    <a href="#/heute" class="nav-btn" data-route="heute">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c3.5 4 6 7.2 6 10.3a6 6 0 0 1-12 0c0-3.1 2.5-6.3 6-10.3z"/></svg>
+      <span>Heute</span>
+    </a>
+    <a href="#/kalender" class="nav-btn" data-route="kalender">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+      <span>Kalender</span>
+    </a>
+    <a href="#/statistik" class="nav-btn" data-route="statistik">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg>
+      <span>Statistik</span>
+    </a>
+    <a href="#/einstellungen" class="nav-btn" data-route="einstellungen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7"/></svg>
+      <span>Einstellungen</span>
+    </a>
+  </nav>
+
+  <noscript><p class="card">Mondzeit braucht JavaScript.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

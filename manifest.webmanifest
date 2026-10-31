@@ -1,0 +1,21 @@
+{
+  "name": "Mondzeit – Periodentracker",
+  "short_name": "Mondzeit",
+  "description": "Persönlicher Periodentracker – privat, offline, nur auf deinem Gerät.",
+  "lang": "de",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./#/heute",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fbf3ee",
+  "theme_color": "#fbf3ee",
+  "categories": ["health", "lifestyle"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
